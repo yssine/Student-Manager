@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+#root{
+  background-color:#2f3640;
+  position: absolute;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  contain: size layout plaint;
+}
+
+.App{
+  margin:0px;
+  background-color:#f5f6fa;
+  padding:2px 2px 3px 2px;
+}
+
+
+.ul1{
+  display: flex;
+  list-style-type: none;
+  padding: 2px 0px 0px 2px;
+  margin: 3px 0px;
+  background-color: #f5f6fa;
+  transition: 0.54s;
+}
+.ul1:hover{
+  box-shadow: 0px 3px  rgba(236, 240, 241,0.45);
+}
+
+.lnk{
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: #2c3e50;
+  font-weight: bold;
+  font-size: 20;
+  padding: 20px 10px;
+  border: 2px solid #2c3e50;
+  
+  border-radius: 8% 0%;
+  margin: 0px 6px;
+  text-shadow: 2px 2px rgba(44, 62, 80,0.3);
+  transition: 0.4s;
+
+}
+
+.lnk:hover{
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-decoration: none;
+  border-radius: 0% 8%;
+  font-size: 25;
+  text-shadow: 2px 2px rgba(236, 240, 241,0.3);
+
+
+}
+.ul2 {
+  display: flex;
+  list-style-type: none;
+  padding: 2px 0px 0px 2px;
+  margin:0px;
+  position: absolute;
+  right: 0px;
+  top: 26px;
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+  margin: 3px 0px;
+
+
+}
+.ul2 li{
+  margin: 4px 6px;
+  text-align: center;
+  
+}
+.lnk1{
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: #2c3e50;
+  font-weight: bold;
+  font-size: 20;
+  padding:0 6px;
+}
+.lnk1:hover{
+  text-decoration: none;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  /*min-height: 100vh;*/
+  text-align: center;
+  position: relative;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #ecf0f1;
+  border: none;
+  contain: size layout plaint;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App-header h1{
+  margin: 10px 7px 7px 7px;
+  font-weight: bold;
+  padding:15px;
+  
+}
+.App-header p{
+  margin: 7px 20px;
+  color: white;
+
+}
+
+.title{
+  color: #ecf0f1;
+  margin: 10px 7px 10px 7px;
+  padding:5px;
+}

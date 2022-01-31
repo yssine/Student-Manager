@@ -1,0 +1,129 @@
+.read-more {
+    justify-content: flex-end;
+  display: flex;
+
+}
+
+.shortinfos {
+    background: #F8F8F8;
+}
+
+.fullinfo {
+    background: #f1f1f1;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+
+  .filieredetails {
+      
+    background: #535967;
+    color: white;
+    border-top: 5px solid #483bff;
+
+    padding: 3em;
+  }
+
+  .borderless td, .borderless th {
+    border: none;
+    color: white;
+
+}
+h2.entry-title{
+  color: rgb(136, 15, 15);
+  text-align: center;
+}
+a{
+  color: rgb(136, 15, 15);
+  
+}
+.image{
+  text-align: center;
+}
+.table {
+  border-collapse: collapse;
+  border: #00050a;
+  width: 100%;
+}
+
+.tableRowHeader {
+  background-color: transparent;
+  transition: all 0.25s ease;
+  border-radius: 10px;
+}
+
+.tableHeader {
+  background-color: #f1f1f1;
+  padding: 12px;
+  font-weight: 500;
+  text-align: left;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+.tableHeader:first-child {
+  border-top-left-radius: 15px;
+}
+
+.tableHeader:last-child {
+  border-top-right-radius: 15px;
+}
+
+.tableRowItems {
+  cursor: auto;
+}
+
+.tableRowItems:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.tableCell {
+  padding: 12px;
+  font-size: 14px;
+  color: rgb(250, 244, 244);
+}
+.tableFooter {
+  background-color: #f1f1f1;
+  padding: 8px 0px;
+  width: 100%;
+  font-weight: 500;
+  text-align: left;
+  font-size: 16px;
+  color: #2c3e50;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  border: none;
+  padding: 7px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.activeButton {
+  color: white;
+  background: #185adb;
+}
+
+.inactiveButton {
+  color: #2c3e50;
+  background: #f9f9f9;
+}

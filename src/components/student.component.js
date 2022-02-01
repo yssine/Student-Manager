@@ -72,16 +72,16 @@ export default class Students extends Component {
       return (
     <div>
         <div className="container">
-        <Table data={this.state.studentslist} rowsPerPage={14} />
+        <Table data={this.state.studentslist} rowsPerPage={9} />
         </div>
     <div className="blog col-md-4 flex-column d-flex align-items-stretch">
            
-           <div className="container">
-            <article class="entry">
+    <div className="container">
+    <article class="entry">
     
     <div className="image entry-img">
     <img src={add} alt="" height={80} width={80} className="img-fluid">
-  </img>
+    </img>
     </div>
     
     <h2 className="entry-title">

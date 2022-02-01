@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import useTable from "./usetable.component";
 import styles from "./component.css";
 import TableFooter from "./tablefooter";
+import delet from "../delete-64.png";
+import edit from "../edit-64.png";
+import "./students.css";
 
 const Table = ({ data, rowsPerPage }) => {
   const [page, setPage] = useState(1);
@@ -27,16 +30,16 @@ const Table = ({ data, rowsPerPage }) => {
         <tbody>
           {slice.map((el) => (
             <tr className={styles.tableRowItems} key={el.id}>
-                <td className={styles.tableCell}>{el.id}</td>
+              <td className={styles.tableCell}>{el.id}</td>
               <td className={styles.tableCell}>{el.firstname}</td>
               <td className={styles.tableCell}>{el.lastname}</td>
               <td className={styles.tableCell}>{el.birthday}</td>
               <td className={styles.tableCell}>{el.email}</td>
               <td className={styles.tableCell}>{el.filiere.filierename}</td>
-              <td className={styles.tableCell}><a href={"../update/"+el.id}>Modifier</a></td>
-              <td className={styles.tableCell}><a href={"../deletestudent/"+el.id}>Supprimer</a></td>
-              <td className={styles.tableCell}><a href={"../note/"+el.id}>Notes</a></td>
-              <td className={styles.tableCell}><a href={"../absence/"+el.id}>Absence</a></td>
+              <td className={styles.tableCell}><a href={"../update/"+el.id}><img className="icn" alt="" src={edit}></img></a></td>
+              <td className={styles.tableCell}><a href={"../deletestudent/"+el.id}><img className="icn" alt="" src={delet}></img></a></td>
+              <td className={styles.tableCell}><a href={"../note/"+el.id}><img className="icn" alt="" src={edit}></img></a></td>
+              <td className={styles.tableCell}><a href={"../absence/"+el.id}><img className="icn" alt="" src={edit}></img></a></td>
               
             </tr>
           ))}

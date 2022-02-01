@@ -50,13 +50,21 @@ export default class Profile extends Component {
             <strong>{currentUser.username}</strong>'s Profile
           </h3>
           <h3>
-            <strong>Id :</strong>{" "}
+            <strong>Id : </strong>{" "}
             {currentUser.id} {currentUser.prenom}
           </h3>
           <h3>
-            <strong>Email :</strong>{" "}
-            {currentUser.email}
+            <strong>Email : </strong>{currentUser.email}           
           </h3>
+          {/* <h3>
+            <strong>Nom : </strong>{currentUser.lastname}
+          </h3>
+          <h3>
+            <strong>Prénom : </strong>{currentUser.firstname}
+          </h3>
+          <h3>
+            <strong>Filière : </strong>{currentUser.filiere.filierename}
+          </h3> */}
         </div>
         </div>: null}
       </div>

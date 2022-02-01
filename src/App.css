@@ -3,33 +3,37 @@ body{
   margin: 0;
   height: 100%;
   box-sizing: border-box;
+  /* background-color:#f506fa; */
 }
 #root{
-  background-color:#2f3640;
+  background-color:#f5f6fa;
   position: absolute;
   margin: 0;
   height: 100%;
   width: 100%;
-  contain: size layout plaint;
+  contain: layout;
 }
 
 .App{
   margin:0px;
-  background-color:#f5f6fa;
+  background-color:#ecf0f1 ;
   padding:2px 2px 3px 2px;
+  border-bottom: 4px solid #2980b9;
 }
-
+.App ul{
+  background-color:#ecf0f1 
+}
 
 .ul1{
   display: flex;
   list-style-type: none;
   padding: 2px 0px 0px 2px;
   margin: 3px 0px;
-  background-color: #f5f6fa;
+  background-color: #ecf0f1;
   transition: 0.54s;
 }
-.ul1:hover{
-  box-shadow: 0px 3px  rgba(236, 240, 241,0.45);
+.ul1 :hover {
+  box-shadow: 10px 3px  rgba(236, 240, 241,0.45);
 }
 
 .lnk{
@@ -111,7 +115,7 @@ body{
 }
 
 .App-header h1{
-  margin: 10px 7px 7px 7px;
+  margin: 8px 7px 7px 7px;
   font-weight: bold;
   padding:15px;
   

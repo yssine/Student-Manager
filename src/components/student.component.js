@@ -72,7 +72,7 @@ export default class Students extends Component {
       return (
     <div>
         <div className="container">
-        <Table data={this.state.studentslist} rowsPerPage={4} />
+        <Table data={this.state.studentslist} rowsPerPage={14} />
         </div>
     <div className="blog col-md-4 flex-column d-flex align-items-stretch">
            

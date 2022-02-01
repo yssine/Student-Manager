@@ -17,10 +17,10 @@ body{
         text-align: center;
         text-decoration: none;
         display: flex;
-        color: #ecf0f1;
+        color: #2c3e50;
         font-weight: bold;
         font-size: 20;
-        background-color:#2f3640;
+        background-color:#ecf0f1;
         padding: 20px 10px;
         border: 2px solid #bdc3c7;
         border-radius: 8px;
@@ -40,10 +40,10 @@ body{
     text-align: center;
     text-decoration: none;
     display: flex;
-    color: #ecf0f1;
+    color: #2c3e50;
     font-weight: bold;
     font-size: 20;
-    background-color:#2f3640;
+    background-color:#ecf0f1;
     padding: 8px 10px;
     border: 2px solid #bdc3c7;
     border-radius: 8px;

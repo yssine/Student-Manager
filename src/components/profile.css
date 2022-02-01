@@ -1,0 +1,60 @@
+
+
+.container{
+
+text-align: center;
+}
+
+.imb{
+    padding: 5px;
+    margin: 6px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.txt{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    line-height: 38px;
+    padding: 10px;
+    margin: 20px;
+
+}
+
+.sl{
+    display: block;
+    height: 100px;
+    width: 100px;
+}
+
+.upload{
+    border: 50px solid;
+    z-index: 999;
+    position: absolute;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    _cursor: hand;
+    opacity: 0%;
+
+}
+
+
+.pps{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    opacity: 0%;
+    left: -75px;
+}
+
+
+.pp{
+    height: 100px;
+    width: 100px;
+    /* position: absolute; */
+    border-radius: 50%;
+}

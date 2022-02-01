@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import AuthService from "../services/auth.service";
+import "./profile.css"
+import pdp from "../pdp.png"
+
 
 export default class Profile extends Component {
   constructor(props) {
@@ -31,30 +34,31 @@ export default class Profile extends Component {
       <div className="container">
         {(this.state.userReady) ?
         <div>
-        <header className="jumbotron">
+
+        <div className="imb">
+        
+          <div className="sl">
+            <input className="upload" type="file" accept="image/png, image/jpeg" placeholder="Photo"/>
+            <img className="pp" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"/>
+            <img className="pps" src={pdp}/>
+          </div>
+          
+          
+        </div>
+        <div className="txt">
           <h3>
-            <strong>{currentUser.username}</strong> Profile
+            <strong>{currentUser.username}</strong>'s Profile
           </h3>
-        </header>
-        <p>
-          <strong>Token:</strong>{" "}
-          {currentUser.accessToken.substring(0, 20)} ...{" "}
-          {currentUser.accessToken.substr(currentUser.accessToken.length - 20)}
-        </p>
-        <p>
-          <strong>Id:</strong>{" "}
-          {currentUser.id}
-        </p>
-        <p>
-          <strong>Email:</strong>{" "}
-          {currentUser.email}
-        </p>
-        <strong>Authorities:</strong>
-        <ul>
-          {currentUser.roles &&
-            currentUser.roles.map((role, index) => <li key={index}>{role}</li>)}
-        </ul>
-      </div>: null}
+          <h3>
+            <strong>Id :</strong>{" "}
+            {currentUser.id} {currentUser.prenom}
+          </h3>
+          <h3>
+            <strong>Email :</strong>{" "}
+            {currentUser.email}
+          </h3>
+        </div>
+        </div>: null}
       </div>
     );
   }

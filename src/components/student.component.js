@@ -2,9 +2,9 @@ import React, { Component, useState } from "react";
 import axios     from "axios";
 import UserService from "../services/user.service";
 import { useParams } from "react-router-dom";
-import './component.css';
+// import './component.css';
 import authHeader from '../services/auth-header';
-
+import "./students.css";
 import logo from "../logoinpt.png";
 import add from "../add.png";
 import Table from "../components/Table.component"
@@ -70,32 +70,14 @@ export default class Students extends Component {
 
    
       return (
-    <div>
-        <div className="container">
-        <Table data={this.state.studentslist} rowsPerPage={9} />
-        </div>
-    <div className="blog col-md-4 flex-column d-flex align-items-stretch">
-           
     <div className="container">
-    <article class="entry">
-    
-    <div className="image entry-img">
-    <img src={add} alt="" height={80} width={80} className="img-fluid">
-    </img>
-    </div>
-    
-    <h2 className="entry-title">
-      <a href={"../addstudent/"}>Ajouter un nouveau etudiant</a>
-    </h2>
-       
-    <div className="entry-content">
-      
+        <div className="tbl"> 
+          <Table data={this.state.studentslist} rowsPerPage={9} />
         </div>
-    
-    </article>
-            </div>
-            </div>
-
+        <div className="new">            
+            <a href={"../addstudent/"}><img src={add} alt="" height={80} width={80} className="img-fluid">
+          </img></a>
+        </div>
 
     </div>
         

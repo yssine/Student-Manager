@@ -1,0 +1,63 @@
+
+
+
+.icn{
+    width: 16px;
+    height: 16px;
+    filter: grayscale(100%);
+}
+
+
+a :hover{
+    filter: grayscale(0%);
+
+}
+
+.container{
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    padding: 0;
+}
+
+.tbl{
+    position: absolute;
+    width: 80%;
+    left: 10%;    
+}
+
+.new{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    bottom: 3%;
+    left: 1%;
+}
+
+th {
+    background-color: #2980b9;
+    color: white;
+  }
+
+table, th, td {
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+.bday{
+    min-width: 200px;
+    
+}
+.n{
+    max-width: 50px;
+}
+
+.lst {
+    min-width: 200px;
+}
+.st{
+    min-width: 200px;
+}
+.mail{
+    min-width: 200px;
+}

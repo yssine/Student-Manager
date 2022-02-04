@@ -30,6 +30,8 @@ import DeleteStudent from "./components/deletestudent.component";
 import UpdateStudent from "./components/updatestudent.component";
 import Modules from "./components/modules.component";
 import Elements from "./components/elements.component";
+import AddAbsence from "./components/addabsence.componenet";
+import Absence from "./components/absence.component";
 import Note from "./components/note.component";
 
 class App extends Component {
@@ -113,6 +115,7 @@ class App extends Component {
             <Route exact path="/addelement" component={Addelements} />
             <Route exact path="/addsemestre" component={Addsemestre} />
             <Route exact path="/addstudent" component={Addstudent} />
+            <Route exact path="/addabsence" component={AddAbsence} />
             <Route exact path="/addannee" component={Addannees} />
             <Route exact path="/profile" component={Profile} />
             <Route path="/user" component={BoardUser} />
@@ -126,6 +129,8 @@ class App extends Component {
             <Route exact path="/addelement/:id" render={({ match }) => (<Addelements match={match} />)} />
             <Route exact path="/elements/:id" render={({ match }) => (<Elements match={match} />)} />
             <Route exact path="/note/:id" render={({ match }) => (<Note match={match} />)} />
+            <Route exact path="/absence/:id" render={({ match }) => (<Absence match={match} />)} />
+            <Route exact path="/addabsence/:id" render={({ match }) => (<AddAbsence match={match} />)} />
           </Switch>
       </Router>
     );

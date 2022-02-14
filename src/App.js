@@ -33,6 +33,12 @@ import Elements from "./components/elements.component";
 import AddAbsence from "./components/addabsence.componenet";
 import Absence from "./components/absence.component";
 import Note from "./components/note.component";
+import Teachers from "./components/teacher.component";
+import addTeacher from "./components/addteacher.component";
+import DeleteTeacher from "./components/deleteteacher.componenet";
+import UpdateTeacher from "./components/updateteacher.componenet";
+
+
 
 class App extends Component {
   constructor(props) {
@@ -106,6 +112,7 @@ class App extends Component {
             <Route exact path="/filieres" component={Filieres} />
             <Route exact path="/etudiants" component={Students} />
             <Route exact path="/semestres" component={Semestres} />
+            <Route exact path="/professeurs" component={Teachers} />
             <Route exact path="/annees" component={Annees} />
             <Route exact path="/modules" component={Modules} />
             <Route exact path="/elements" component={Elements} />
@@ -118,9 +125,13 @@ class App extends Component {
             <Route exact path="/addabsence" component={AddAbsence} />
             <Route exact path="/addannee" component={Addannees} />
             <Route exact path="/profile" component={Profile} />
+            <Route exact path="/professeurs" component={Teachers} />
+            <Route exact path="/addteacher" component={addTeacher} />
             <Route path="/user" component={BoardUser} />
             <Route path="/mod" component={BoardModerator} />
             <Route path="/admin" component={BoardAdmin} />
+            <Route exact path="/deleteteacher/:id" render={({ match }) => (<DeleteTeacher match={match} />)} />
+            <Route exact path="/updateteacher/:id" render={({ match }) => (<UpdateTeacher match={match} />)} />
             <Route exact path="/filieres" render={({ match }) => (<Filieres match={match} />)} /> 
             <Route exact path="/modules/:id" render={({match }) => (<Modules match={match} />)} />
             <Route exact path="/addmodule/:id" render={({ match }) => (<Addmodules match={match} />)} />
